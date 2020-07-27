@@ -1,0 +1,5 @@
+(CLEAR S) (ONTABLE R) (ON S T) (ON T A) (ON A R)
+(CLEAR T) (ONTABLE H) (ON T R) (ON R A) (ON A S) (ON S H)
+(CLEAR T) (ONTABLE H) (ON T U) (ON U S) (ON S H)
+(CLEAR T) (ONTABLE K) (ON T R) (ON R U) (ON U C) (ON C K)
+(CLEAR T) (ONTABLE K) (ON T U) (ON U C) (ON C K)
