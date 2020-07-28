@@ -1,0 +1,2 @@
+(CLEAR D) (ONTABLE W) (ON D R) (ON R A) (ON A W)
+(CLEAR P) (ONTABLE W) (ON P A) (ON A W)
