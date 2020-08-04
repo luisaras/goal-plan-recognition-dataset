@@ -35,13 +35,19 @@ patch_blocks() {
                 popd
                 rm -rf $FOLDER
             done
+            #for FILE in *.solution; do
+            #    NEW_FILE="${FILE/blocksworld/blocks-world}"
+            #    mv $FILE $NEW_FILE
+            #done
             popd
         done
+        popd
     fi
 }
 
 patch_blocks optimal
-patch_blocks suboptimal
-patch_blocks noisy
+#patch_blocks suboptimal
+#patch_blocks optimal-noisy
+#patch_blocks suboptimal-noisy
 
 echo "Done"
