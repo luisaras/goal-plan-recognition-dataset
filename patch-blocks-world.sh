@@ -45,7 +45,8 @@ patch_blocks() {
     fi
 }
 
-patch_blocks optimal
+patch_blocks optimal-old-noisy
+patch_blocks suboptimal-old-noisy
 #patch_blocks suboptimal
 #patch_blocks optimal-noisy
 #patch_blocks suboptimal-noisy
