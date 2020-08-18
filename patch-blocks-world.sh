@@ -12,8 +12,8 @@
 echo -n "Fixing domain.pddl in all experiments. Please wait. "
 
 patch_blocks() {
-    if [[ -d blocks-world-$1 ]]; then
-        pushd blocks-world-$1
+    if [[ -d $1-old-noisy ]]; then
+        pushd $1-old-noisy
         for o in 10 30 50 70 100; do
             pushd $o
             for FILE in *.tar.bz2; do
@@ -45,8 +45,17 @@ patch_blocks() {
     fi
 }
 
-patch_blocks optimal-old-noisy
-patch_blocks suboptimal-old-noisy
+patch_blocks depots
+patch_blocks driverlog
+patch_blocks dwr 
+patch_blocks easy-ipc-grid
+patch_blocks ferry
+patch_blocks logistics
+patch_blocks miconic
+patch_blocks rovers
+patch_blocks satellite
+patch_blocks sokoban
+patch_blocks zeno-travel
 #patch_blocks suboptimal
 #patch_blocks optimal-noisy
 #patch_blocks suboptimal-noisy
