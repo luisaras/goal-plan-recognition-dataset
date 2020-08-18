@@ -21,6 +21,7 @@ patch_grid() {
                 NEW_FILE="${NEW_FILE/p05/p5}"
                 NEW_FILE="${NEW_FILE/-5_hyp/-5_p01_hyp}"
                 NEW_FILE="${NEW_FILE/-10_hyp/-10_p01_hyp}"
+                NEW_FILE="${NEW_FILE/_100_/_full_}"
                 mv $FILE $NEW_FILE
             done
             popd
