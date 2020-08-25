@@ -1,0 +1,3 @@
+(in ca q1) (in cb p2) (in cc q2)
+(in ca q1) (in cb q2) (in cc q2)
+(in ca q2) (in cb p2) (in cc q2)
