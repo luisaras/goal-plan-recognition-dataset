@@ -1,3 +1,0 @@
-(in cb p2) (in cc p2) (in cf p2) (in ca p3) (in cd p3) (in ce p3) (on cd ca) (on cc cb)
-(in cb p2) (in cc p2) (in cf p2) (in ca p2) (in cd p3) (in ce p2) (on cb cf) (on ca ce)
-(in cb p2) (in cc p3) (in cf p2) (in ca p3) (in cd p2) (in ce p2) (on cb cf) (on cf pallet)
