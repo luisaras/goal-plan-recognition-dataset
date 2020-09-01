@@ -11,18 +11,14 @@
 
 echo -n "Fixing solution names. Please wait. "
 
-patch_grid() {
-    if [[ -d easy-ipc-grid-$1-old-noisy ]]; then
-        pushd easy-ipc-grid-$1-old-noisy
+patch_dwr() {
+    if [[ -d dwr-$1-old-noisy ]]; then
+        pushd dwr-$1-old-noisy
         for o in 10 30 50 70 100; do
             pushd $o
             for FILE in *.tar.bz2; do
-                NEW_FILE="${FILE/p010/p10}"
-                NEW_FILE="${NEW_FILE/p05/p5}"
-                NEW_FILE="${NEW_FILE/-5_hyp/-5_p01_hyp}"
-                NEW_FILE="${NEW_FILE/-10_hyp/-10_p01_hyp}"
-                NEW_FILE="${NEW_FILE/_100_/_full_}"
-                NEW_FILE="${NEW_FILE/pb/p}"
+                NEW_FILE="${FILE/_100_/_full_}"
+                NEW_FILE="${NEW_FILE/pb/p0}"
 		mv $FILE $NEW_FILE
             done
             popd
@@ -31,7 +27,7 @@ patch_grid() {
     fi
 }
 
-patch_grid optimal
-patch_grid suboptimal
+patch_dwr optimal
+patch_dwr suboptimal
 
 echo "Done"
